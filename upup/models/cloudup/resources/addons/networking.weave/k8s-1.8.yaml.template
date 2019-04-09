@@ -159,7 +159,7 @@ spec:
                   name: weave-net
                   key: network-password
             {{- end }}
-          image: 'weaveworks/weave-kube:2.5.0'
+          image: 'weaveworks/weave-kube:2.5.1'
           livenessProbe:
             httpGet:
               host: 127.0.0.1
