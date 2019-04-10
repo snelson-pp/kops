@@ -168,10 +168,11 @@ spec:
             initialDelaySeconds: 30
           resources:
             requests:
-              cpu: 50m
-              memory: 200Mi
+              cpu: 800m
+              memory: 500Mi
             limits:
-              memory: 200Mi
+              cpu: 800m
+              memory: 500Mi
           securityContext:
             privileged: true
           volumeMounts:
@@ -200,9 +201,10 @@ spec:
           image: 'weaveworks/weave-npc:2.5.1'
           resources:
             requests:
-              cpu: 50m
+              cpu: 100m
               memory: 200Mi
             limits:
+              cpu: 100m
               memory: 200Mi
           securityContext:
             privileged: true
