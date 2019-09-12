@@ -125,6 +125,7 @@ spec:
         configMap:
           name: kube-dns
           optional: true
+      priorityClassName: system-cluster-critical
 
       containers:
       - name: kubedns
