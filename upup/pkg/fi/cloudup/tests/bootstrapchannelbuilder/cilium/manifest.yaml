@@ -75,7 +75,7 @@ spec:
   - id: k8s-1.12
     kubernetesVersion: '>=1.12.0'
     manifest: dns-controller.addons.k8s.io/k8s-1.12.yaml
-    manifestHash: e1493110ca6127662cbf50a1506e0f3e45504691
+    manifestHash: 34cb4800069ced247b408a1c726ecfd1d5cc79af
     name: dns-controller.addons.k8s.io
     selector:
       k8s-addon: dns-controller.addons.k8s.io
