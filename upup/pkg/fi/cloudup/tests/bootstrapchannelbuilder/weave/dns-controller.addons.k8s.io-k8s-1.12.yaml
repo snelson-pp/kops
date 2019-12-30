@@ -35,10 +35,13 @@ spec:
           requests:
             cpu: 50m
             memory: 50Mi
+        securityContext:
+          runAsUser: 1000
       dnsPolicy: Default
       hostNetwork: true
       nodeSelector:
         node-role.kubernetes.io/master: ""
+      priorityClassName: system-cluster-critical
       serviceAccount: dns-controller
       tolerations:
       - effect: NoSchedule
