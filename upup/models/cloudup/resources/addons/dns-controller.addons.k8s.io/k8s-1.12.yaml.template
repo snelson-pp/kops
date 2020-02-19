@@ -57,6 +57,8 @@ spec:
           requests:
             cpu: 50m
             memory: 50Mi
+        securityContext:
+          runAsUser: 1000
 
 ---
 
